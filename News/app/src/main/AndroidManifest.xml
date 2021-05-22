@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.itcast.news">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".DrawlayoutActivity" android:label="抽屉动画"></activity>
+        <activity
+            android:name=".FrameActivity"
+            android:label="逐帧动画" />
+        <activity
+            android:name=".AnimationActivity"
+            android:label="补间动画" />
+        <activity
+            android:name=".ClassmateListActivity"
+            android:label="班级大家庭" />
+        <activity
+            android:name=".ImageActivity"
+            android:label="我找到的网络图片" />
+        <activity
+            android:name=".VideoActivity"
+            android:label="我喜爱的网络视频" />
+        <activity
+            android:name=".MusicActivity"
+            android:label="我喜爱的音乐" /> <!-- 必须加载类库 -->
+        <activity android:name=".MainActivity" android:label="我的客户端">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>
